@@ -19,16 +19,20 @@ public class ConditionalStatement {
 
       // Print if a number is odd number
 
-      System.out.println("Enter The number :");
-      int newNum = scan.nextInt();
+    //   System.out.println("Enter The number :");
+    //   int newNum = scan.nextInt();
 
-      if(newNum%2==0){
-        System.out.println("Number is Even !!");
+    //   if(newNum%2==0){
+    //     System.out.println("Number is Even !!");
     
-      }
-      else{
-        System.out.println("Number is Odd !!");
-      }
+    //   }
+    //   else{
+    //     System.out.println("Number is Odd !!");
+    //   }
+
+    // Adult Calculator
+
+    
          
 
     
