@@ -62,29 +62,29 @@ public class ConditionalStatement {
     
     // Print the largest number 
 
-    System.out.println("Enter The number a :");
-    int a = scan.nextInt();
-    System.out.println("Enter The number b :");
-    int b = scan.nextInt();
-    System.out.println("Enter The number c :");
-    int c = scan.nextInt();
+    // System.out.println("Enter The number a :");
+    // int a = scan.nextInt();
+    // System.out.println("Enter The number b :");
+    // int b = scan.nextInt();
+    // System.out.println("Enter The number c :");
+    // int c = scan.nextInt();
 
-    if (a > b){
-         if (a>c){
-            System.out.println(a+" is Largest !!!");
-         }
-         else{
-            System.out.println(c+" is Largest !!!");
-         }
-    } 
-    else{
-       if (b>c){
-            System.out.println(b+" is Largest !!!");
-         }
-         else{
-            System.out.println(c+" is Largest !!!");
-         }
-    }
+    // if (a > b){
+    //      if (a>c){
+    //         System.out.println(a+" is Largest !!!");
+    //      }
+    //      else{
+    //         System.out.println(c+" is Largest !!!");
+    //      }
+    // } 
+    // else{
+    //    if (b>c){
+    //         System.out.println(b+" is Largest !!!");
+    //      }
+    //      else{
+    //         System.out.println(c+" is Largest !!!");
+    //      }
+    // }
 
     }
 }
