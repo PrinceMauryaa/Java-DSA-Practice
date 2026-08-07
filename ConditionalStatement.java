@@ -32,7 +32,18 @@ public class ConditionalStatement {
 
     // Adult Calculator
 
-    
+    // System.out.println("Enter Your age :");
+    // int age = scan.nextInt();
+
+    // if (age >=18){
+    //     System.out.println("You Are Adult !! :) ");
+    // }
+    // else if (age>=13) {
+    //     System.out.println("You Are Teenager !! :)");
+    // }
+    // else{
+    //     System.out.println("You are Child :(");
+    // }
          
 
     
