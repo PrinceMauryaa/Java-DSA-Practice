@@ -47,20 +47,44 @@ public class ConditionalStatement {
 
     // Income Tax Cal calculator
     
-    System.out.println("Enter Your Income !!");
-    int income = scan.nextInt();
+    // System.out.println("Enter Your Income !!");
+    // int income = scan.nextInt();
 
-    if (income<=500000){
-        System.out.println("Zero tax");
-    }
-    else if(income<=1000000){
-        System.out.println("Your Taxx is 20% is "+income*0.20);
-    }
+    // if (income<=500000){
+    //     System.out.println("Zero tax");
+    // }
+    // else if(income<=1000000){
+    //     System.out.println("Your Taxx is 20% is "+income*0.20);
+    // }
+    // else{
+    //     System.out.println("Your Taxx is 30% is "+income*0.30);
+    // }
+    
+    // Print the largest number 
+
+    System.out.println("Enter The number a :");
+    int a = scan.nextInt();
+    System.out.println("Enter The number b :");
+    int b = scan.nextInt();
+    System.out.println("Enter The number c :");
+    int c = scan.nextInt();
+
+    if (a > b){
+         if (a>c){
+            System.out.println(a+" is Largest !!!");
+         }
+         else{
+            System.out.println(c+" is Largest !!!");
+         }
+    } 
     else{
-        System.out.println("Your Taxx is 30% is "+income*0.30);
+       if (b>c){
+            System.out.println(b+" is Largest !!!");
+         }
+         else{
+            System.out.println(c+" is Largest !!!");
+         }
     }
-    
-    
 
     }
 }
