@@ -6,7 +6,7 @@ public class ConditionalStatement {
         
         Scanner sco = new Scanner(System.in);
         int a = sco.nextInt();
-        System.out.println("HEllo " + a);
+        System.out.println("HEllooo " + a);
         System.out.println("This is Your Answer");
 
     }
