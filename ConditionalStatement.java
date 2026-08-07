@@ -44,8 +44,21 @@ public class ConditionalStatement {
     // else{
     //     System.out.println("You are Child :(");
     // }
-         
 
+    // Income Tax Cal calculator
+    
+    System.out.println("Enter Your Income !!");
+    int income = scan.nextInt();
+
+    if (income<=500000){
+        System.out.println("Zero tax");
+    }
+    else if(income<=1000000){
+        System.out.println("Your Taxx is 20% is "+income*0.20);
+    }
+    else{
+        System.out.println("Your Taxx is 30% is "+income*0.30);
+    }
     
     
 
