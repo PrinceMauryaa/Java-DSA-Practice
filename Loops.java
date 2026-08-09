@@ -84,23 +84,51 @@ public class Loops {
 
 
         // Prime Numberr
-        System.out.println("Enter number :");
-        int num = scan.nextInt();
-        boolean isPrime = true;
+        // System.out.println("Enter number :");
+        // int num = scan.nextInt();
+        // boolean isPrime = true;
 
-        for (int i = 2 ; i <= num/2 ; i++){
-            if (num % i == 0){
-                isPrime = false;
+        // for (int i = 2 ; i <= num/2 ; i++){
+        //     if (num % i == 0){
+        //         isPrime = false;
+        //         break;
+        //     }
+        // }
+        
+        // if (isPrime == false){
+        //     System.out.println("This is not Prime !");
+        // }
+        // else{
+        //     System.out.println("This Is  Prime");
+        // }
+
+
+        // Write a program that reads a set of integers , and then prints the sum of the even and odd integers.
+
+
+        int evenSum =0;
+        int oddSum =0;
+
+        do{
+            System.out.print("Enter the number :");
+            int num = scan.nextInt();
+            if (num % 2 == 0){
+                evenSum += num;
+            }
+            else{
+                oddSum += num;
+            }
+            System.out.println("Press 1 to continue and 0 to  end !!");
+            int temp = scan.nextInt();
+            if (temp == 0) {
                 break;
             }
-        }
-        
-        if (isPrime == false){
-            System.out.println("This is not Prime !");
-        }
-        else{
-            System.out.println("This Is  Prime");
-        }
+        }while(true);
+
+        System.out.println("Sum of all Even : "+evenSum);
+        System.out.println("Sum of all Odd : "+oddSum);
+
+
     }
     
 }
