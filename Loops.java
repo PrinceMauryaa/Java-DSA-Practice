@@ -131,17 +131,28 @@ public class Loops {
 
         //FActorial 
 
-        System.out.println("Enter the number :");
-        int num = scan.nextInt();
-        int fact = 1;
+        // System.out.println("Enter the number :");
+        // int num = scan.nextInt();
+        // int fact = 1;
 
 
-        for(int i=num ; i>0 ;i--){
-            fact = fact * i ;
-        }
+        // for(int i=num ; i>0 ;i--){
+        //     fact = fact * i ;
+        // }
 
-        System.out.println("FActorial of Num is : "+fact);
+        // System.out.println("FActorial of Num is : "+fact);
+
+        
         // Table
+
+        System.out.print("Enter the number for table : ");
+        int num = scan.nextInt();
+        int res ;
+        for(int i = 1;i<=10;i++){
+            res = i * num;
+            System.out.println(num +"*"+i+"="+res);
+        }
+        System.out.println("Table is Completed !!");
 
     }
     
