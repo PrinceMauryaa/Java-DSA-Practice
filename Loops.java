@@ -106,28 +106,42 @@ public class Loops {
         // Write a program that reads a set of integers , and then prints the sum of the even and odd integers.
 
 
-        int evenSum =0;
-        int oddSum =0;
+        // int evenSum =0;
+        // int oddSum =0;
 
-        do{
-            System.out.print("Enter the number :");
-            int num = scan.nextInt();
-            if (num % 2 == 0){
-                evenSum += num;
-            }
-            else{
-                oddSum += num;
-            }
-            System.out.println("Press 1 to continue and 0 to  end !!");
-            int temp = scan.nextInt();
-            if (temp == 0) {
-                break;
-            }
-        }while(true);
+        // do{
+        //     System.out.print("Enter the number :");
+        //     int num = scan.nextInt();
+        //     if (num % 2 == 0){
+        //         evenSum += num;
+        //     }
+        //     else{
+        //         oddSum += num;
+        //     }
+        //     System.out.println("Press 1 to continue and 0 to  end !!");
+        //     int temp = scan.nextInt();
+        //     if (temp == 0) {
+        //         break;
+        //     }
+        // }while(true);
 
-        System.out.println("Sum of all Even : "+evenSum);
-        System.out.println("Sum of all Odd : "+oddSum);
+        // System.out.println("Sum of all Even : "+evenSum);
+        // System.out.println("Sum of all Odd : "+oddSum);
 
+
+        //FActorial 
+
+        System.out.println("Enter the number :");
+        int num = scan.nextInt();
+        int fact = 1;
+
+
+        for(int i=num ; i>0 ;i--){
+            fact = fact * i ;
+        }
+
+        System.out.println("FActorial of Num is : "+fact);
+        // Table
 
     }
     
