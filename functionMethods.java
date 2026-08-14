@@ -22,6 +22,30 @@ public class functionMethods {
     }
 
 
+    public static int fact (int num){
+
+        int res = 1 ;
+        for(int i = 1; i <= num ; i++){
+            res = i*res;
+        }
+        return res;
+    }
+
+    public static int BioCof(int n , int r){
+
+        int a = fact(n);
+        int b = fact(r);
+        int c = r-n;
+
+        int res = a/(b*c);
+
+        System.out.println(res);
+
+
+        return res;
+
+
+    }
 
 
 
@@ -30,19 +54,26 @@ public class functionMethods {
 
         // swap 
 
-        swap(inText(),inText());
+        // swap(inText(),inText());
 
 
 
         // multiply
 
-        multi(inText(),inText());
+        // multi(inText(),inText());
 
         // factorial
 
 
+        // System.out.println(fact(5));
 
-        // Bionominal Cofficient nCr = n! / r! (n-n)!
+
+
+        // Bionominal Cofficient nCr = n! / r! (n-r)!
+
+        System.out.println(BioCof(2,5));
+
+
 
         // 
     }
