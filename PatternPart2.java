@@ -47,6 +47,18 @@ public class PatternPart2 {
         }
     }
 
+    public static void FloiedTrangle( int num )
+    {
+        int a = 1;
+        for(int i = 1; i <= num ; i++ ){
+            for (int j = 1 ; j <= i ; j++ ){
+                System.out.print(a+" ");
+                a++;
+            }
+            System.out.println("");
+        }
+    }
+
     
 
 
@@ -54,6 +66,7 @@ public class PatternPart2 {
 
         // HollowBox(5);
         // InvTrangle(8);
-        InvPiraWithNum(5);
+        // InvPiraWithNum(5);
+        FloiedTrangle(5);
     }
 }
