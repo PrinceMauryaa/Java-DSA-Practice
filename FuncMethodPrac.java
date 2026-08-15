@@ -8,7 +8,10 @@ public class FuncMethodPrac {
     }
 
     public static boolean isEvan (int a){
-        
+        if(a%2 == 0){
+            return true;
+        }
+        return false;
     }
 
 
@@ -18,6 +21,9 @@ public class FuncMethodPrac {
 
         // System.out.println(Avg3no(4,5 ,7));
 
+        // Check number is Even or False !!
+
+        System.out.println(isEvan(6));
 
 
     }
