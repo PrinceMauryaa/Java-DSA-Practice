@@ -62,6 +62,16 @@ public class functionMethods {
 
     }
 
+    public static void countPrime(int num){
+
+        for ( int i = 2 ; i <= num ; i++){
+            if(isPrime(i)){
+                System.out.println(i);
+            }
+        }
+
+    }
+
 
 
     public static void main(String[] args) {
@@ -88,6 +98,8 @@ public class functionMethods {
 
         // System.out.println(BioCof(2,5));
 
+        // print prime number !!
+        countPrime(100);
 
 
 
