@@ -59,6 +59,24 @@ public class PatternPart2 {
         }
     }
 
+    public static void ZeroOneTrangle(int num){
+
+        int a = 1;
+        for(int i = 1; i <= num ; i++ ){
+            for (int j = 1 ; j <= i ; j++ ){
+                if(a % 2 == 0){
+                    System.out.print("1 ");
+                }
+                else{
+                    System.out.print("0 ");
+                }
+                a++;
+            }
+            System.out.println("");
+        }
+        
+    }
+
     
 
 
@@ -67,6 +85,7 @@ public class PatternPart2 {
         // HollowBox(5);
         // InvTrangle(8);
         // InvPiraWithNum(5);
-        FloiedTrangle(5);
+        // FloiedTrangle(5);
+        ZeroOneTrangle(6);
     }
 }
