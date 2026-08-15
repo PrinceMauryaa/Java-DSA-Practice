@@ -19,9 +19,31 @@ public class PatternPart2 {
     }
 
 
+
+    public static void InvTrangle( int a){
+
+
+        for(int i = 0 ; i < a ; i++){
+            for(int j = 0 ; j < a ; j++){
+                if (j >= a-i){
+                    System.out.print(" *");
+                }
+                else{
+                    System.out.print("  ");
+                }
+                
+            }
+            System.out.println(" ");
+        }
+
+    }
+
+    
+
+
     public static void main(String[] args) {
 
-        HollowBox(5);
-        
+        // HollowBox(5);
+        InvTrangle(8);
     }
 }
