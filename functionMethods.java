@@ -47,6 +47,21 @@ public class functionMethods {
 
     }
 
+    public static boolean isPrime(int num){
+
+        if(num == 2){
+            return true;
+        }
+        for(int i=2 ; i < num/2 ; i++){
+            if(i%num==0){
+                return true;
+            }
+        }
+
+        return false;
+
+    }
+
 
 
     public static void main(String[] args) {
@@ -71,7 +86,9 @@ public class functionMethods {
 
         // Bionominal Cofficient nCr = n! / r! (n-r)!
 
-        System.out.println(BioCof(2,5));
+        // System.out.println(BioCof(2,5));
+
+
 
 
 
