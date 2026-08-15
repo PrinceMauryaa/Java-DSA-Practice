@@ -14,6 +14,28 @@ public class FuncMethodPrac {
         return false;
     }
 
+    public static int poww(int num , int po){
+        int res = 1;
+        for(int i = 1 ; i <= po; i++){
+            res = res * num;
+        }
+        return res;
+    }
+
+    public static boolean isPalindron(int num){
+
+        double num_rev = 0;
+        for(int i = 0 ; i < num ; i++){
+            num_rev = num_rev + (num%10)*Math.pow(10,i);
+            num = num/10;
+        }
+
+        if(num == num_rev){
+            return true;
+        }
+        return false;
+    }
+
 
     public static void main(String[] args) {
         
@@ -23,7 +45,11 @@ public class FuncMethodPrac {
 
         // Check number is Even or False !!
 
-        System.out.println(isEvan(6));
+        // System.out.println(isEvan(6));
+
+        // check the number is palindom !!
+
+        System.out.println(isPalindron(121));
 
 
     }
