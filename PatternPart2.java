@@ -129,6 +129,7 @@ public class PatternPart2 {
 
 
     public static void HollowRombus(int num){
+
         for(int i = 1 ; i <= num ; i++){
 
             for(int j = num ; j >= i ; j-- ){
@@ -150,6 +151,31 @@ public class PatternPart2 {
         
     }    
 
+    public static void Star(int num){
+
+        for(int i = 1 ; i <= num+1 ; i++){
+            for(int j = 1 ; j <= (num+1-i) ; j++){
+                System.out.print(" ");
+            }
+            for(int j = 1 ; j <= i ; j++){
+                System.out.print(" *");
+            }
+            
+            System.out.println("");
+        }
+         for(int i = num ; i >= 1 ; i--){
+            for(int j = 1 ; j <= (num+1-i) ; j++){
+                System.out.print(" ");
+            }
+            for(int j = 1 ; j <= i ; j++){
+                System.out.print(" *");
+            }
+            
+            System.out.println("");
+        }
+
+    }
+
 
 
     public static void main(String[] args) {
@@ -161,7 +187,8 @@ public class PatternPart2 {
         // ZeroOneTrangle(6);
         // butterFly(4);
         // Rombus(5);
-        HollowRombus(5);
+        // HollowRombus(5);
+        Star(5);
         
     }
 }
