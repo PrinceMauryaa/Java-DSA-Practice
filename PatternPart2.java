@@ -77,6 +77,39 @@ public class PatternPart2 {
         
     }
 
+
+    public static void butterFly(int num){
+
+        for(int i = 1 ; i <= num ; i++){
+
+            for(int j = 1 ; j <= i ; j++ ){
+                System.out.print("* ");
+            }
+            for(int a = 1 ; a <= 2*(num-i) ; a++){
+                System.out.print("  ");
+            }
+            for(int j = 1 ; j <= i ; j++ ){
+                System.out.print("* ");
+            }
+            System.out.println("");
+
+        }
+         for(int i = num ; i > 0 ; i--){
+
+            for(int j = 1 ; j <= i ; j++ ){
+                System.out.print("* ");
+            }
+            for(int a = 1 ; a <= 2*(num-i) ; a++){
+                System.out.print("  ");
+            }
+            for(int j = 1 ; j <= i ; j++ ){
+                System.out.print("* ");
+            }
+            System.out.println("");
+
+        }
+
+    }
     
 
 
@@ -86,6 +119,9 @@ public class PatternPart2 {
         // InvTrangle(8);
         // InvPiraWithNum(5);
         // FloiedTrangle(5);
-        ZeroOneTrangle(6);
+        // ZeroOneTrangle(6);
+
+        butterFly(4);
+        
     }
 }
