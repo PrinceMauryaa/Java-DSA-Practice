@@ -110,7 +110,23 @@ public class PatternPart2 {
         }
 
     }
-    
+
+    public static void Rombus(int num){
+        for(int i = 1 ; i <= num ; i++){
+
+            for(int j = num ; j >= i ; j-- ){
+                System.out.print(" ");
+            } 
+
+            for(int j = 1 ; j <= num ; j++ ){
+                System.out.print(" *");
+            }
+            System.out.println("");
+        }
+        
+    }    
+
+
 
 
     public static void main(String[] args) {
@@ -120,8 +136,9 @@ public class PatternPart2 {
         // InvPiraWithNum(5);
         // FloiedTrangle(5);
         // ZeroOneTrangle(6);
-
-        butterFly(4);
+        // butterFly(4);
+        Rombus(5);
+        // HollowRombus(5);
         
     }
 }
