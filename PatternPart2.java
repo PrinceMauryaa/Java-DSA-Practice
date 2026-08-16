@@ -128,6 +128,29 @@ public class PatternPart2 {
 
 
 
+    public static void HollowRombus(int num){
+        for(int i = 1 ; i <= num ; i++){
+
+            for(int j = num ; j >= i ; j-- ){
+                System.out.print(" ");
+            } 
+
+            for(int j = 1 ; j <= num ; j++ ){
+                if(j == 1 || j == num || i == 1 || i == num){
+                System.out.print(" *");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            
+
+            System.out.println("");
+        }
+        
+    }    
+
+
 
     public static void main(String[] args) {
 
@@ -137,8 +160,8 @@ public class PatternPart2 {
         // FloiedTrangle(5);
         // ZeroOneTrangle(6);
         // butterFly(4);
-        Rombus(5);
-        // HollowRombus(5);
+        // Rombus(5);
+        HollowRombus(5);
         
     }
 }
