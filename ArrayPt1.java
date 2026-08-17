@@ -73,7 +73,9 @@ public class ArrayPt1 {
     public static void PairArr(int Arr[]){
 
         for(int i = 0 ; i < Arr.length ; i++){
-            for (int j = 0 ; j < Arr.length ; j++){
+
+            for (int j = i+1 ; j < Arr.length ; j++)
+                {
                 if(i == j){
                     System.out.print("");
                 }else{
