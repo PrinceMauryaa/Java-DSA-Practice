@@ -70,6 +70,22 @@ public class ArrayPt1 {
         }
     }
 
+    public static void PairArr(int Arr[]){
+
+        for(int i = 0 ; i < Arr.length ; i++){
+            for (int j = 0 ; j < Arr.length ; j++){
+                if(i == j){
+                    System.out.print("");
+                }else{
+                    System.out.print(Arr[i] + ","+Arr[j] + "  ,  ");
+                }
+            }
+            System.out.println("");
+        }
+
+
+    }
+
 
 
 
@@ -90,7 +106,9 @@ public class ArrayPt1 {
 
         // BiSort(BinArr, 8);
 
-       PrintArr( BinArr = Reverse(BinArr) ) ;
+        //PrintArr( BinArr = Reverse(BinArr) ) ;
+
+        PairArr(BinArr);
 
         
 
