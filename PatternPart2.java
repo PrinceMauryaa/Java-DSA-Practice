@@ -188,7 +188,7 @@ public class PatternPart2 {
         // butterFly(4);
         // Rombus(5);
         // HollowRombus(5);
-        Star(5);
+        // Star(5);
         
     }
 }
