@@ -110,8 +110,9 @@ public class ArrayPt1 {
 
         //PrintArr( BinArr = Reverse(BinArr) ) ;
 
-        PairArr(BinArr);
+        // PairArr(BinArr);
 
+        // Print Subarrays .. !!
         
 
 
