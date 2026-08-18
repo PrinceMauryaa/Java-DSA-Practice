@@ -90,12 +90,28 @@ public class ArrayPt1 {
 
     public static void subArray(int num[]){
 
+        int maxVal = Integer.MIN_VALUE;
+        int sum = 0;
+
         for(int i = 0 ; i < num.length ; i++){
+            int start = i ;
             for(int j = i ; j < num.length ; j++ ){
-                System.out.print(num[j]+" ");
+                int end = j ;
+                for(int k = start ; k <= end ; k++){
+                    System.out.print(num[k]+" ");
+                    sum = sum+num[k];
+                }
+                System.out.print(" -- Sum :"+sum);
+                if(maxVal < sum){
+                    maxVal = sum;
+                }
+                sum = 0;
+                
+                System.out.println("");
             }
             System.out.println("");
         }
+         System.out.println("Maximum Sum = "+ maxVal);
 
 
     }
