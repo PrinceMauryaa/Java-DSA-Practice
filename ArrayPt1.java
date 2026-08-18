@@ -88,6 +88,17 @@ public class ArrayPt1 {
 
     }
 
+    public static void subArray(int num[]){
+
+        for(int i = 0 ; i < num.length ; i++){
+            for(int j = i ; j < num.length ; j++ ){
+                System.out.print(num[j]+" ");
+            }
+            System.out.println("");
+        }
+
+
+    }
 
 
 
@@ -114,6 +125,7 @@ public class ArrayPt1 {
 
         // Print Subarrays .. !!
         
+        subArray(BinArr);
 
 
 
