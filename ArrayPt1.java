@@ -116,6 +116,9 @@ public class ArrayPt1 {
 
     }
 
+    public static void tappingRain(){
+        
+    }
 
 
     public static void main(String[] args) {
@@ -144,6 +147,9 @@ public class ArrayPt1 {
         // subArray(BinArr);
 
         // rain wala question
+
+        // tapping rain watter 
+
 
 
     }
