@@ -116,11 +116,7 @@ public class ArrayPt1 {
 
     }
 
-    public static void tappingRain(){
-
-        // s
-        
-    }
+    
 
 
     public static void main(String[] args) {
