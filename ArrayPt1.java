@@ -117,6 +117,8 @@ public class ArrayPt1 {
     }
 
     public static void tappingRain(){
+
+        // stating codeing here
         
     }
 
