@@ -121,6 +121,8 @@ public class ArrayPt1 {
 
     public static void main(String[] args) {
 
+        System.out.println(" HELLO THIS IS JAVA LANG..");
+
         // Array
         int BinArr[] = {2,6,8,-10,12,16,-18,-22};
         int Num[] = {99,1,56,37,39,55,36,90,28,45,27,19};
