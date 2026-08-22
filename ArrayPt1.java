@@ -117,7 +117,7 @@ public class ArrayPt1 {
     }
 
     
-
+ // no codding
 
     public static void main(String[] args) {
 
