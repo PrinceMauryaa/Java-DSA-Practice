@@ -117,7 +117,7 @@ public class ArrayPt1 {
     }
 
     
- // no codding
+ // no codding day
 
     public static void main(String[] args) {
 
