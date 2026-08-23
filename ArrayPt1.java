@@ -117,8 +117,6 @@ public class ArrayPt1 {
     }
 
     
- // no codding day
-
     public static void main(String[] args) {
 
         // System.out.println(" HELLO THIS IS JAVA LANG..");
