@@ -115,7 +115,6 @@ public class ArrayPt1 {
 
 
     }
-// go go hello
     
     public static void main(String[] args) {
 
