@@ -115,6 +115,16 @@ public class ArrayPt1 {
 
 
     }
+
+    public static int TrappedWater(int arr[]){
+
+        if (arr.length<3) {
+            return 0;
+        }
+
+
+        return 1;
+    }
     
     public static void main(String[] args) {
 
@@ -147,6 +157,7 @@ public class ArrayPt1 {
 
         // tapping rain watter 
 
+        System.out.println(TrappedWater(Num));
 
 
     }
