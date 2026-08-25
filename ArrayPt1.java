@@ -121,9 +121,27 @@ public class ArrayPt1 {
         if (arr.length<3) {
             return 0;
         }
+        int leftMax = 0 ;
+        int rightMax = 0 ;
+        int countWater = 0;
 
-
-        return 1;
+        for(int i = 0; i < arr.length ; i ++){
+            for(int j = i; j > 0; j--){
+                if(arr[j] > leftMax){
+                    leftMax = arr[j];
+                }
+            }
+            for(int j = i; j < arr.length; j++){
+                if(arr[j] > rightMax){
+                    rightMax = arr[j];
+                }
+            }
+            int minNum = Math.min(leftMax,rightMax);
+            if(minNum-arr[i] > 0){
+                countWater = countWater + (minNum-arr[i]);
+            }
+        }
+        return countWater;
     }
     
     public static void main(String[] args) {
@@ -133,7 +151,8 @@ public class ArrayPt1 {
         // Array
         int BinArr[] = {2,6,8,-10,12,16,-18,-22};
         int Num[] = {99,1,56,37,39,55,36,90,28,45,27,19};
-        int key = 15;
+        int key[] = {15,7};
+        int TapWat[] = {4,2,0,6,3,2,5};
         // if(NumIndex(Num, key) == -1){
         //     System.out.println("NOT FOUND !!");
         // }
@@ -157,7 +176,7 @@ public class ArrayPt1 {
 
         // tapping rain watter 
 
-        System.out.println(TrappedWater(Num));
+        System.out.println(TrappedWater(TapWat));
 
 
     }
