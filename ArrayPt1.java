@@ -145,6 +145,24 @@ public class ArrayPt1 {
         }
         return countWater;
     }
+
+    public static int bestBuyPrice(int arr[]){
+
+        int Maxprofiit = 0;
+        int bp = arr[0];
+        int sp = 0;
+        for(int i = 1 ; i < arr.length ; i++){
+            int profit = sp - bp;
+            if(profit > Maxprofiit){
+                Maxprofiit = profit;
+            }
+
+
+
+        }
+
+        return Maxprofiit;
+    }
     
     public static void main(String[] args) {
 
@@ -178,7 +196,9 @@ public class ArrayPt1 {
 
         // tapping rain watter 
 
-        System.out.println(TrappedWater(Num));
+        // System.out.println(TrappedWater(Num));
+
+        System.out.println(bestBuyPrice(TapWat));
 
 
     }
