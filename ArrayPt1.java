@@ -125,19 +125,21 @@ public class ArrayPt1 {
         int rightMax = 0 ;
         int countWater = 0;
 
-        for(int i = 0; i < arr.length ; i ++){
-            for(int j = i; j > 0; j--){
+        for(int i = 1; i < arr.length ; i ++){
+            for(int j = i-1; j >= 0; j--){
                 if(arr[j] > leftMax){
                     leftMax = arr[j];
                 }
             }
-            for(int j = i; j < arr.length; j++){
+            for(int j = i+1; j < arr.length; j++){
                 if(arr[j] > rightMax){
                     rightMax = arr[j];
                 }
             }
             int minNum = Math.min(leftMax,rightMax);
             if(minNum-arr[i] > 0){
+                leftMax = 0 ;
+                rightMax = 0 ;
                 countWater = countWater + (minNum-arr[i]);
             }
         }
@@ -176,7 +178,7 @@ public class ArrayPt1 {
 
         // tapping rain watter 
 
-        System.out.println(TrappedWater(TapWat));
+        System.out.println(TrappedWater(Num));
 
 
     }
