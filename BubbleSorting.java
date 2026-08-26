@@ -42,13 +42,29 @@ public class BubbleSorting {
         System.out.println("Small First Done!!");
     }
 
+    public static void InsertionSort(int arr[]){
 
+        for(int i = 1 ; i < arr.length ; i++){
+            int curr = arr[i];
+            int prev = i-1;
+            while(prev >= 0 && arr[prev] > curr){
+
+                arr[prev+1] = arr[prev];
+                prev--;
+            }
+            arr[prev+1] = curr;
+        }
+
+        for(int i = 0 ; i < arr.length ; i++){
+            System.out.println(arr[i]);
+        }
+    }
     public static void main(String[] args) {
         int arr[] = {12,4,6,78,7,3,8,9};
         int Num[] = {99,1,56,37,39,55,36,90,28,45,27,19};
 
 
-        SmalSort(Num);
+        InsertionSort(Num);
 
 
     }
