@@ -198,7 +198,7 @@ public class ArrayPt1 {
 
         // System.out.println(TrappedWater(Num));
 
-        System.out.println(bestBuyPrice(TapWat));
+        // System.out.println(bestBuyPrice(TapWat));
 
 
     }
